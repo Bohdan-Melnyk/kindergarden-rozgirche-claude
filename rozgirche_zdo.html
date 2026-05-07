@@ -404,7 +404,6 @@
       <div class="gal-item gi7 fade-in">🎭</div>
       <div class="gal-item gi8 fade-in">🌸</div>
     </div>
-    <p class="gallery-note fade-in">* Замініть кольорові блоки на реальні фотографії вашого закладу</p>
   </div>
 </section>
 
@@ -502,7 +501,7 @@
           <p>Кидик Іванна Миколаївна</p>
         </div>
         <div style="margin-top:32px; padding-top:28px; border-top:1px solid rgba(255,255,255,0.08);">
-          <p style="color:rgba(255,255,255,.3); font-size:.78rem;">© 2025 Розгірченський заклад дошкільної освіти</p>
+          <p style="color:rgba(255,255,255,.3); font-size:.78rem;">© <span id="footer-year"></span> Розгірченський заклад дошкільної освіти</p>
           <p style="color:rgba(255,255,255,.2); font-size:.72rem; margin-top:6px;">Львівська область, Стрийський район</p>
         </div>
       </div>
@@ -512,6 +511,8 @@
 
 
 <script>
+  document.getElementById('footer-year').textContent = new Date().getFullYear();
+
   function toggleMenu() {
     document.getElementById('mobileMenu').classList.toggle('open');
   }
